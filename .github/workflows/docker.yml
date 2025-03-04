@@ -60,7 +60,7 @@ jobs:
 
       - name: Scan Docker Image with Trivy
         run: |
-          trivy image --exit-code 1 --severity HIGH,CRITICAL ghcr.io/${{ github.repository_owner }}/datacrow:${{ github.sha }}
+          ./bin/trivy --exit-code 1 --severity HIGH,CRITICAL ghcr.io/${{ github.repository_owner }}/datacrow:${{ github.sha }}
 
       - name: Upload Trivy Scan Report (Optional)
         if: always()  # Ensures report uploads even if scan fails
