@@ -1,4 +1,4 @@
-FROM ubuntu/jre:17-22.04_edge
+FROM eclipse-temurin:17-jre
 
 WORKDIR /datacrow
 RUN apt-get update && apt-get install -y wget unzip && \
