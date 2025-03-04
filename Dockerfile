@@ -1,4 +1,4 @@
-FROM openjdk:17-jre-slim
+FROM ubuntu/jre:17-22.04_edge
 
 WORKDIR /datacrow
 RUN apt-get update && apt-get install -y wget unzip && \
