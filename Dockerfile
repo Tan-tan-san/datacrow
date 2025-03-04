@@ -1,12 +1,10 @@
 FROM eclipse-temurin:17-jre
 
 WORKDIR /datacrow
-
 RUN apt-get update && apt-get install -y wget unzip && \
     wget https://datacrow.org/wp-content/uploads/versions/datacrow_4.9.1_server_zipped.zip && \
     unzip datacrow_4.9.1_server_zipped.zip && \
-    rm datacrow_4.9.1_server_zipped.zip && \
-    #apt-get clean && rm -rf /var/lib/apt/lists/*
+    rm datacrow_4.9.1_server_zipped.zip 
 
 EXPOSE 9000 9001 8080
 
