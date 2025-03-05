@@ -1,4 +1,4 @@
-FROM openjdk:25-slim-bullseye
+FROM openjdk:25-ea-jdk-slim-bookworm
 #FROM jumpserver/openjdk:17-slim-bullseye
 
 WORKDIR /datacrow
