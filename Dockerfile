@@ -10,4 +10,4 @@ RUN apt-get update && apt-get install -y wget unzip libfreetype6 fontconfig font
     mkdir -p /datacrow/dc-server/data
 
 EXPOSE 9000 9001 8080
-CMD ["java", "-Xmx1024m", "-jar", "/datacrow/dc-server/datacrow-server.jar", "-dir:/datacrow/dc-server", "-userdir:/datacrow/dc-server/data", "-port:9000", "-imageserverport:9001", "-webserverport:8080", "-credentials:admin/2xadmin", "-ip:datacrow-service]
+CMD ["java", "-Xmx1024m", "-jar", "/datacrow/dc-server/datacrow-server.jar", "-dir:/datacrow/dc-server", "-userdir:/datacrow/dc-server/data", "-port:9000", "-imageserverport:9001", "-webserverport:8080", "-credentials:admin/2xadmin", "-ip:datacrow-service"]
