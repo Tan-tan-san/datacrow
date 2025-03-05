@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jre
+FROM jumpserver/openjdk:17-slim-bullseye
 
 WORKDIR /datacrow
 RUN apt-get update && apt-get install -y wget unzip && \
