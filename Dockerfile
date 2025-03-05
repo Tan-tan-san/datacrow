@@ -8,5 +8,4 @@ RUN apt-get update && apt-get install -y wget unzip && \
 
 EXPOSE 9000 9001 8080
 
-CMD ["java", "-Xmx1024m", "-jar", "/datacrow/datacrow-server.jar", "-dir", "/datacrow", "-userdir", "/datacrow", "-port", "9000", "-imageserverport", "9001", "-webserverport", "8080", "-credentials", "admin/2xadmin"]
-
+CMD ["java", "-Xmx1024m", "-jar", "/datacrow/dc-server/datacrow-server.jar", "-dir", "/datacrow/dc-server", "-userdir", "/datacrow/dc-server", "-port", "9000", "-imageserverport", "9001", "-webserverport", "8080", "-credentials", "admin/2xadmin"]
